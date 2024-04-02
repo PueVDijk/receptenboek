@@ -12,13 +12,13 @@ require "header.php";
 <H1>Recepten:</H1>
 <div class="flexboxContainer">
 <?php
-while ($data = mysqli_fetch_assoc($result)) {
+foreach ($result as $data) {
     echo "<div class='receptcontainer'>";
         echo "  <div class='recepttitel'>";
-            echo "    <a href='detail.php?recept_id=" . $data["recept_id"] . "'>" . $data["receptnaam"] . "</a>";
+            echo "    <a href='recept.php?recept_id=" . $data["recept_id"] . "'>" . $data["receptnaam"]; // Dynamische link met identifier
         echo "  </div>";
         echo "  <div class='receptfoto'>";
-            echo "<img src= 'images/" . $data["foto"] . "' alt='receptfoto'>";
+            echo "<img src='images/" . $data["foto"] . "' alt='receptfoto'>" . "</a>";
         echo "  </div>";
     echo "</div>";
 }
@@ -26,3 +26,4 @@ while ($data = mysqli_fetch_assoc($result)) {
 </div>
 <?php
 require "footer.php";
+?>

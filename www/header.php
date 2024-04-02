@@ -10,9 +10,9 @@
 
 <body>
     <header>
-        <h1>Recepten Webapp</h1>
+        <h1>Recepten Webapp - 日本料理屋</h1>
     </header>
-    <?php 
+    <?php
     require "navigatie.php";
     ?>
     <main>

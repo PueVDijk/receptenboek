@@ -1,7 +1,7 @@
 </main>
-<footer>
-    <p>(c)Pieter</p>
-</footer>
 </body>
+<footer>
+    <p>© Pieter</p>
+</footer>
 
 </html>
