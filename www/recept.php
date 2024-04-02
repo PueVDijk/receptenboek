@@ -20,7 +20,7 @@ require "header.php";
     <?php echo $recept['recept_id'] ?></p>
 <p>
     Bereidingstijd:
-    <?php echo $recept['bereidingstijd'] ?></p>
+    <?php echo $recept['bereidingstijd'] . ' minuten' ?></p>
 <p>
 <p>
     Aantal ingrediënten:
