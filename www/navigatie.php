@@ -9,7 +9,9 @@ if ($result_aantal) {
     $aantal_recepten = $row['aantal_recepten'];
 }
 ?>
-<nav>
-    <a href="index.php">receptenlijst (<?php echo $aantal_recepten ?> recepten)</a>
-    <a href="specials.php">overzichten</a>
-</nav>
+<div class="navContainer">
+    <nav>
+        <a href="index.php">receptenlijst (<?php echo $aantal_recepten ?> recepten)</a>
+        <a href="specials.php">overzichten</a>
+    </nav>
+</div>
